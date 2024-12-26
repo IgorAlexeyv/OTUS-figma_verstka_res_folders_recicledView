@@ -33,6 +33,17 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    sourceSets {
+        getByName("main") {
+            res {
+                srcDirs(
+                    "src/main/res",
+                    "src/main/res/layouts/main",
+                    "src/main/res/layouts/recycler"
+                )
+            }
+        }
+    }
 }
 
 dependencies {
