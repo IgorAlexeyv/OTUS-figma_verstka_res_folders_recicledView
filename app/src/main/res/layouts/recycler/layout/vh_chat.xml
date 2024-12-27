@@ -204,6 +204,26 @@
         app:layout_constraintEnd_toStartOf="@+id/pinnedSpace"
         app:srcCompat="@drawable/mention_badge" />
 
+    <Space
+        android:id="@+id/mentionedSpace"
+        android:layout_width="5dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mentioned" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/count_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mentionedSpace"
+        tools:text="50" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/rightGuideline"
         android:layout_width="wrap_content"
