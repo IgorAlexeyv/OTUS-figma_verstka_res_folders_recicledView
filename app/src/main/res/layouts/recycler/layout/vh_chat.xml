@@ -133,47 +133,83 @@
 
     <ImageView
         android:id="@+id/preview"
-        android:contentDescription="@string/content_preview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:contentDescription="@string/content_preview"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/barrier"
         app:srcCompat="@drawable/preview" />
 
     <TextView
         android:id="@+id/previewText"
-        android:textSize="15sp"
-        android:textColor="#FF8D8E90"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
-        tools:text="I want pizza"
+        android:textColor="#FF8D8E90"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/preview"
         app:layout_constraintStart_toEndOf="@+id/preview"
-        app:layout_constraintTop_toTopOf="@+id/preview" />
+        app:layout_constraintTop_toTopOf="@+id/preview"
+        tools:text="I want pizza" />
 
     <TextView
         android:id="@+id/time"
-        android:textSize="13sp"
-        android:textColor="#FF95999A"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="13dp"
-        tools:text="13:50"
+        android:textColor="#FF95999A"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="13:50" />
 
     <ImageView
         android:id="@+id/checkIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="1dp"
+        android:contentDescription="@string/content_check"
         app:layout_constraintBottom_toBottomOf="@+id/time"
         app:layout_constraintEnd_toStartOf="@+id/time"
         app:layout_constraintTop_toTopOf="@+id/time"
         app:srcCompat="@drawable/check_icon" />
+
+    <ImageView
+        android:id="@+id/pinned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/content_pinned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rightGuideline"
+        app:srcCompat="@drawable/pinned_icon" />
+
+    <Space
+        android:id="@+id/pinnedSpace"
+        android:layout_width="5dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pinned" />
+
+    <ImageView
+        android:id="@+id/mentioned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/content_mention"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pinnedSpace"
+        app:srcCompat="@drawable/mention_badge" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="13dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,4 +12,7 @@
     <string name="txt_typing">typing…</string>
     <string name="content_preview">Preview</string>
     <string name="txt_preview">I want pizza</string>
+    <string name="content_check">Check</string>
+    <string name="content_pinned">Pinned</string>
+    <string name="content_mention">Mention</string>
 </resources>
