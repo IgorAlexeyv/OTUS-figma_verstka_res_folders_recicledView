@@ -11,6 +11,13 @@ import ru.otus.dz.data.ChatItem
 import ru.otus.dz.databinding.VhChatBinding
 
 class ChatAdapter : ListAdapter<ChatItem, ChatAdapter.ChatViewHolder>(ChatDiff) {
+
+    fun removeItem(position: Int) {
+        val list = currentList.toMutableList()
+        list.removeAt(position)
+        submitList(list)
+    }
+
     class ChatViewHolder(private val binding: VhChatBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(chatItem: ChatItem) = with(binding){
             Glide.with(binding.root).load(chatItem.avatar).circleCrop().into(avatar)

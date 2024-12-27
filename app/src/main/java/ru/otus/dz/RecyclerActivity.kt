@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
+import androidx.recyclerview.widget.ItemTouchHelper
 import com.google.android.material.divider.MaterialDividerItemDecoration
 import ru.otus.dz.data.chat
 import ru.otus.dz.databinding.ActivityRecyclerBinding
@@ -29,5 +30,7 @@ class RecyclerActivity : AppCompatActivity() {
             dividerInsetStart = resources.getDimensionPixelOffset(R.dimen.text_start)
         }
         binding.chatList.addItemDecoration(dividerItemDecoration)
+
+        ItemTouchHelper(TouchHelperCallback(adapter)).attachToRecyclerView(binding.chatList)
     }
 }
