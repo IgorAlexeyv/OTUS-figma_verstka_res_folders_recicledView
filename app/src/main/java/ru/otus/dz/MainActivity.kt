@@ -1,7 +1,9 @@
 package ru.otus.dz
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +25,13 @@ class MainActivity : AppCompatActivity() {
 
         binding.menuInput.setOnItemClickListener { _, _, position, _ ->
             Toast.makeText(this, "Position clicked: $position", Toast.LENGTH_LONG).show();
+        }
+
+        binding.toPermissionsSettings.setOnClickListener {
+            val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                data = Uri.fromParts("package", packageName, null)
+            }
+            startActivity(intent)
         }
     }
 }
