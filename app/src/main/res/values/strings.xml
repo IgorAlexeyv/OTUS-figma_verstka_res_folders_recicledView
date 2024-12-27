@@ -4,4 +4,8 @@
     <string name="txt_recycler_activity">Recycler Activity</string>
     <string name="content_avatar">Avatar</string>
     <string name="content_voip">voip</string>
+    <string name="content_locked">Locked</string>
+    <string name="content_verified">Verified</string>
+    <string name="content_mute">Mute</string>
+    <string name="content_scam">Scam</string>
 </resources>
