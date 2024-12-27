@@ -90,4 +90,38 @@
         app:layout_constraintTop_toTopOf="@+id/name"
         app:srcCompat="@drawable/scam" />
 
+    <TextView
+        android:id="@+id/middleText"
+        android:textSize="15sp"
+        android:textColor="#FF434449"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        tools:text="Nikolay"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <ImageView
+        android:id="@+id/typingIcon"
+        android:contentDescription="@string/content_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/typing"
+        app:layout_constraintStart_toEndOf="@+id/middleText"
+        app:layout_constraintTop_toTopOf="@+id/typing"
+        app:srcCompat="@drawable/dots" />
+
+    <TextView
+        android:id="@+id/typing"
+        android:textColor="#FF70AAEA"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/txt_typing"
+        app:layout_constraintStart_toEndOf="@+id/typingIcon"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
