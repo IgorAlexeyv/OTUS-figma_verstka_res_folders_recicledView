@@ -17,4 +17,13 @@
     <string name="content_mention">Mention</string>
     <string name="menu_edit">Edit</string>
     <string name="menu_favorite">Favorite</string>
+    <string-array name="simple_items">
+        <item>@string/menu_option_1</item>
+        <item>@string/menu_option_2</item>
+        <item>@string/menu_option_3</item>
+    </string-array>
+    <string name="menu_option_1">Option 1</string>
+    <string name="menu_option_2">Option 2</string>
+    <string name="menu_option_3">Option 3</string>
+    <string name="hint_pick_an_option">Pick an option</string>
 </resources>
