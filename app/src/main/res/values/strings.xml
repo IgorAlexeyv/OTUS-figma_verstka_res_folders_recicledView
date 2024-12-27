@@ -15,4 +15,6 @@
     <string name="content_check">Check</string>
     <string name="content_pinned">Pinned</string>
     <string name="content_mention">Mention</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_favorite">Favorite</string>
 </resources>
