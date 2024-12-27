@@ -3,4 +3,5 @@
     <string name="activity_recycler">Recycler Activity</string>
     <string name="txt_recycler_activity">Recycler Activity</string>
     <string name="content_avatar">Avatar</string>
+    <string name="content_voip">voip</string>
 </resources>
