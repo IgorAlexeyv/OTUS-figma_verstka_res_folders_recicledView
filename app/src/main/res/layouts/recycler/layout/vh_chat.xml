@@ -59,10 +59,10 @@
 
     <ImageView
         android:id="@+id/verified"
-        android:contentDescription="@string/content_verified"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
+        android:contentDescription="@string/content_verified"
         app:layout_constraintBottom_toBottomOf="@+id/name"
         app:layout_constraintStart_toEndOf="@+id/name"
         app:layout_constraintTop_toTopOf="@+id/name"
@@ -92,21 +92,21 @@
 
     <TextView
         android:id="@+id/middleText"
-        android:textSize="15sp"
-        android:textColor="#FF434449"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        tools:text="Nikolay"
+        android:textColor="#FF434449"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="Nikolay" />
 
     <ImageView
         android:id="@+id/typingIcon"
-        android:contentDescription="@string/content_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
+        android:contentDescription="@string/content_loading"
         app:layout_constraintBottom_toBottomOf="@+id/typing"
         app:layout_constraintStart_toEndOf="@+id/middleText"
         app:layout_constraintTop_toTopOf="@+id/typing"
@@ -114,14 +114,44 @@
 
     <TextView
         android:id="@+id/typing"
-        android:textColor="#FF70AAEA"
-        android:textSize="14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="3dp"
         android:text="@string/txt_typing"
+        android:textColor="#FF70AAEA"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/typingIcon"
         app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="middleText,typingIcon,typing" />
+
+    <ImageView
+        android:id="@+id/preview"
+        android:contentDescription="@string/content_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/barrier"
+        app:srcCompat="@drawable/preview" />
+
+    <TextView
+        android:id="@+id/previewText"
+        android:textSize="15sp"
+        android:textColor="#FF8D8E90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        tools:text="I want pizza"
+        app:layout_constraintBottom_toBottomOf="@+id/preview"
+        app:layout_constraintStart_toEndOf="@+id/preview"
+        app:layout_constraintTop_toTopOf="@+id/preview" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

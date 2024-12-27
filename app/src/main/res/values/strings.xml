@@ -10,4 +10,6 @@
     <string name="content_scam">Scam</string>
     <string name="content_loading">Loading</string>
     <string name="txt_typing">typing…</string>
+    <string name="content_preview">Preview</string>
+    <string name="txt_preview">I want pizza</string>
 </resources>
