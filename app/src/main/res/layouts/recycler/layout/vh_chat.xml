@@ -153,5 +153,27 @@
         app:layout_constraintStart_toEndOf="@+id/preview"
         app:layout_constraintTop_toTopOf="@+id/preview" />
 
+    <TextView
+        android:id="@+id/time"
+        android:textSize="13sp"
+        android:textColor="#FF95999A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="13dp"
+        tools:text="13:50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/checkIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/time"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintTop_toTopOf="@+id/time"
+        app:srcCompat="@drawable/check_icon" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
